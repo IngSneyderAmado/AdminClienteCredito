@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "0aba74fb-fff3-44cc-857e-626babe91428",
+		"name": "CreditoCliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1430972"
+	},
+	"item": [
+		{
+			"name": "create cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\":\"1111111\",\r\n    \"nombre\":\"pepito perez\",\r\n    \"fechaNacimiento\":\"18/05/1991\",\r\n    \"genero\":\"MASCULINO\",\r\n    \"cuenta\":\"035288822\",\r\n    \"tipoCuenta\":\"AHORRO\",\r\n    \"banco\":\"AGRARIO\",\r\n    \"inicioContrato\":\"20/04/2020\",\r\n    \"estado\":\"true\",\r\n    \"tipoCliente\":\"EMPLEADO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/cliente/create",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"cliente",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"pepito perezz\",\r\n    \"fechaNacimiento\":\"18/05/1992\",\r\n    \"genero\":\"MASCULINO\",\r\n    \"cuenta\":\"0352888221\",\r\n    \"tipoCuenta\":\"CORRIENTE\",\r\n    \"banco\":\"DAVIVIENDA\",\r\n    \"inicioContrato\":\"20/04/2023\",\r\n    \"estado\":\"true\",\r\n    \"tipoCliente\":\"INDEPENDIENTE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/cliente/update/11111112",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"cliente",
+						"update",
+						"11111112"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9191/api/cliente/delete/1111111",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"cliente",
+						"delete",
+						"1111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cambiar estado cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/cliente/estado/1111111",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"cliente",
+						"estado",
+						"1111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listado creditos cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\": \"1111111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/credito/list",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"credito",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear credito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"valor\": \"1000000\",\r\n    \"numeroCuotas\":\"8\",\r\n    \"estato\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/credito/create/1111111",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"credito",
+						"create",
+						"1111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detalle credito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificacion\": \"1111111\",\r\n    \"idcredito\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/credito/detalle",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"credito",
+						"detalle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar cuotas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idcredito\":\"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/cuota/list",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"cuota",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pagar cuota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cuota\":\"1\",\r\n    \"idcredito\":\"2\",\r\n    \"valor\": \"125539.02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9191/api/cuota/pagar",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"cuota",
+						"pagar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
