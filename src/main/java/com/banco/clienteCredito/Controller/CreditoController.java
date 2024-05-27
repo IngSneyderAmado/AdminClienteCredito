@@ -11,10 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.banco.clienteCredito.DTO.ClienteRequestDTO;
 import com.banco.clienteCredito.DTO.CreditoRequestDTO;
-import com.banco.clienteCredito.Entity.Credito;
 import com.banco.clienteCredito.Service.ICreditoService;
 
 @RestController

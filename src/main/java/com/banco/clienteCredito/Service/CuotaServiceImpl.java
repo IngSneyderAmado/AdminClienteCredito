@@ -8,7 +8,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.banco.clienteCredito.Entity.Cliente;
 import com.banco.clienteCredito.Entity.Credito;
 import com.banco.clienteCredito.Entity.Cuota;
 import com.banco.clienteCredito.Repository.CreditoRepository;

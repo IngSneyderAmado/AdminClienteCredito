@@ -1,9 +1,7 @@
 package com.banco.clienteCredito.Service;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.ZoneId;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

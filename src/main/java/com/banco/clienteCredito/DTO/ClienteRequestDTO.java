@@ -5,7 +5,6 @@ import java.sql.Date;
 import com.banco.clienteCredito.Entity.Genero;
 import com.banco.clienteCredito.Entity.TipoCuenta;
 import com.banco.clienteCredito.Entity.tipoCliente;
-import com.banco.clienteCredito.Entity.tipoRiesgo;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class ClienteRequestDTO {
